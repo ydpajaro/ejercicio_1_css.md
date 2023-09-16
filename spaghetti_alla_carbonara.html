@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocina Italiana</title>
-</head>
-<body>
-    <header>
-        <h1><img src="images/italia.jpg" alt="Italia" wdith="50" height="25">Cocina Italiana <img src="images/italia.jpg" alt="Italia" wdith="50" height="25"></h1>
-        <img src="images/italia_pais.jpg" alt="Italia_Pais" wdith="300" height="200">
-
-        
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="spaghetti_alla_carbonara.html">Spaghetti alla carbonara</a></li>
-            <li><a href="Lasagna.html">Lasagna</a></li>
-            <li><a href="ingredientes.html">Ingredientes</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Tesoro Culinario de Italia: Spaghetti alla Carbonara</h2>
-            <img src="images/Spaghetti_alla_carbonara.jpg" alt="Spaghetti_alla_carbonara" wdith="500" height="300">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index,follow">
+        <link rel="icon" href="images/dish.png" type="image/png">
+        <title>Cocina Italiana</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body id="page-body" class="body">
+        <header class="color-head">
+            <h1 id="page-title" class="title">
+                <img src="images/italia.jpg" alt="Italia" width="40" height="25">
+                Cocina Italiana
+                <img src="images/italia.jpg" alt="Italia" width="40" height="25">
+            </h1>
             
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OIs9tgALGNU?si=9iDQEZUHJn6J0Tk7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figure id ="figure-title" class = "figure">
+                <img src="images/italia_pais.jpg" alt="Italia_Pais" wdith="300" height="200">
+            </figure>
+            <nav>
+                <ul id="main-nav" class="nav">
+                    <li class="nav__item"><a href="index.html">Inicio</a></li>
+                    <li class="nav__item"><a href="spaghetti_alla_carbonara.html">Spaghetti alla carbonara</a></li>
+                    <li class="nav__item"><a href="Lasagna.html">Lasagna</a></li>
+                    <li class="nav__item"><a href="ingredientes.html">Ingredientes</a></li>
+                </ul>
+            </nav>
+    
+            
+        </header>
+    
+    <main>
+        <section class="video-section">
+            <h2>Tesoro Culinario de Italia: Spaghetti alla Carbonara</h2>
+            <div class="media-container">
+                <img src="images/Spaghetti_alla_carbonara.jpg" alt="Spaghetti_alla_carbonara" wdith="500" height="300">
+            
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OIs9tgALGNU?si=9iDQEZUHJn6J0Tk7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+            </div>
             <article>
                 <p>Los "Spaghetti alla Carbonara" son una delicia de la cocina italiana.  </p>
                 <p>Este plato emblemático combina espaguetis perfectamente cocidos con una rica y cremosa salsa de huevo, queso Pecorino Romano y panceta crujiente.</p>
@@ -35,7 +49,7 @@
         </section>
         <section>
             <h2>Ingredientes </h2>
-            <ul>
+            <ul class="section-ingredientes">
                 <li>320 g de spaghetti de alta calidad</li>
                 <li>150 g de panceta o guanciale (tocino italiano)</li>
                 <li>2 huevos frescos</li>
@@ -45,7 +59,7 @@
                 <li>Sal</li>
             </ul>
             <h2>Modo de preparación</h2>
-            <ol>
+            <ol class="section-modo-preparacion">
                 <li>
                     <p>Comienza cocinando los spaghetti en agua con sal hasta que estén al dente.</p>
                     <p>Recuerda que la textura es esencial en la cocina italiana, así que sigue las instrucciones</p>
